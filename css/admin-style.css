@@ -1,0 +1,116 @@
+@CHARSET "UTF-8";
+
+/*
+ * @package PredictWhen
+ * @version $Id$
+ * @author ian
+ * Copyright Ian Haycox, 2012
+ */
+
+
+/*
+ * Color admin menu icon on hover and selection
+ */
+#toplevel_page_predictwhen_menu .wp-menu-image {
+	background:url('../images/icon-grey.png') no-repeat 7px 7px !important;
+}
+	
+#toplevel_page_predictwhen_menu:hover .wp-menu-image,
+	#toplevel_page_predictwhen_menu.wp-has-current-submenu .wp-menu-image {
+	
+	background:url('../images/icon-hover.png') no-repeat 7px 7px !important;
+}
+
+#toplevel_page_predictwhen_menu img {
+	display: none;
+}
+
+.mce_predictwhen_button {
+	background:url('../images/icon-grey.png') no-repeat 3px 3px !important;
+}
+
+.mce_predictwhen_button:hover {
+	background:url('../images/icon-hover.png') no-repeat 3px 3px !important;
+}
+
+h2#predictwhen_h2-icon {
+	padding-left: 38px;
+	background: url('../images/icon32-grey.png') no-repeat 3px 3px;
+	margin-bottom: 14px;
+}
+
+.form-table.predictwhen_form th {
+	min-width: 250px;
+}
+
+/*
+ * Force narrow columns on wp-list-tables
+ */
+.column-prediction_id, .column-question_id {
+	width:3em;
+}
+
+/*
+ * Widen name column
+ */
+table.questions th#name {
+	width:22em;
+	white-space: nowrap;
+}
+
+.predictwhen_input {
+	border:1px solid #CCC;
+	padding:0 10px;
+	margin-top:5px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+.predictwhen_input .question {
+	font-size: 1.7em;
+	line-height: 100%
+}
+
+div#predictwhen_colorpicker {
+	float:right;
+}
+
+.predictwhen_colorwell {
+	width: 6em;
+	text-align: center;
+	cursor: pointer;
+}
+
+body .predictwhen_colorwell-selected {
+     font-weight: bold;
+}
+
+h2.predictwhen_chart_title {
+	text-align: center;
+}
+
+.predictwhen_question-preview-iframe div#adminmenushadow, .predictwhen_question-preview-iframe div#adminmenuback {
+    background: #FFF;
+}
+.predictwhen_question-preview-iframe div#adminmenuback, .predictwhen_question-preview-iframe div#adminmenuwrap {
+    border: 0px;
+    background-color: #FFF;
+    border-color: #FFF;
+}
+.predictwhen_question-preview-iframe div#adminmenuback {
+    bottom: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+body.predictwhen_question-preview-iframe{min-width:0;} 
+body.predictwhen_question-preview-iframe #sidemenu, body.predictwhen_question-preview-iframe #submenu, body.predictwhen_question-preview-iframe #wpcombar, body.predictwhen_question-preview-iframe #wphead, body.predictwhen_question-preview-iframe #gears-info-box, body.predictwhen_question-preview-iframe #user_info, body.predictwhen_question-preview-iframe #dashmenu, body.predictwhen_question-preview-iframe #adminmenu, body.predictwhen_question-preview-iframe #sidemenu-bg, body.predictwhen_question-preview-iframe #footer, body.predictwhen_question-preview-iframe #feedbacklink, body.predictwhen_question-preview-iframe #screen-meta, body.predictwhen_question-preview-iframe #manage-questions h2#preview-header{display:none;} body.predictwhen_question-preview-iframe-editor #manage-questions h2#preview-header{display:block;} 
+body.predictwhen_question-preview-iframe h2{padding-top:0;} 
+body.predictwhen_question-preview-iframe{margin:0 !important;padding:0 !important;} 
+body.predictwhen_question-preview-iframe .wrap{max-width:100%;} 
+body.predictwhen_question-preview-iframe #wpwrap{min-height:0;} 
+body.predictwhen_question-preview-iframe div#wpcontent{margin:0;padding:0;} 
+body.predictwhen_question-preview-iframe div#wpbody{margin:0;padding:2em 3em;text-align:center;}
+body.predictwhen_question-preview-iframe div#wpbody-content{margin:0;padding:0;border:none;} 
+body.predictwhen_question-preview-iframe div#manage-questions.wrap{text-align:left;} 
